@@ -39,9 +39,6 @@ export default function ParentComponent() {
       <MemoizedChildComponent onClick={handleIncrementCount}>
         Increment Count
       </MemoizedChildComponent>
-      <div>
-        <a href="/">Home</a>
-      </div>
     </div>
   );
 }

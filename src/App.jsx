@@ -4,15 +4,15 @@ export default function App() {
   const links = [
     {
       id: 1,
-      name: "reactrender",
+      name: "Test",
     },
     {
       id: 2,
-      name: "counter",
+      name: "ReactRender",
     },
     {
-      id: 3,
-      name: "test",
+      id: 4,
+      name: "Memoize",
     },
   ];
 
@@ -25,7 +25,7 @@ export default function App() {
       {links.map((item) => {
         return (
           <p key={item.id}>
-            <a href={`/components/${item.name}`}>{item.name}</a>
+            <a href={`/components/${item.name.toLowerCase()}`}>{item.name}</a>
           </p>
         );
       })}
