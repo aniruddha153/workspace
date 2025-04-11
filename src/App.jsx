@@ -12,6 +12,10 @@ export default function App() {
     },
     {
       id: 3,
+      name: "UseRef",
+    },
+    {
+      id: 4,
       name: "Memoize",
     },
   ];
