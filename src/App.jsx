@@ -18,6 +18,10 @@ export default function App() {
       id: 4,
       name: "Memoize",
     },
+    {
+      id: 5,
+      name: "Manage-Effects",
+    },
   ];
 
   return (

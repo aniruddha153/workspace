@@ -13,6 +13,8 @@ import WaveWithoutMemo from "./components/Memoize/WaveWithoutMemo";
 import UseRef from "./components/UseRef";
 import ModalClickOutside from "./components/UseRef/ModalClickOutside";
 import StopWatch from "./components/UseRef/StopWatch";
+import ManageEffects from "./components/ManageEffects";
+import PokemonCarousel from "./components/ManageEffects/PokemonCarousel";
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
@@ -39,6 +41,10 @@ root.render(
           <Route path="useref" element={<UseRef />}>
             <Route path="modal-click-outside" element={<ModalClickOutside />} />
             <Route path="stopwatch" element={<StopWatch />} />
+          </Route>
+
+          <Route path="manage-effects" element={<ManageEffects />}>
+            <Route path="pokemon-carousel" element={<PokemonCarousel />} />
           </Route>
         </Route>
 
