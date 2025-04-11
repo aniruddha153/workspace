@@ -33,6 +33,8 @@ function Greeting({ name }) {
   );
 }
 
-export default function App() {
+const WaveWithoutMemo = () => {
   return <Greeting name="Tyler" />;
-}
+};
+
+export default WaveWithoutMemo;

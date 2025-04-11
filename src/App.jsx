@@ -11,7 +11,7 @@ export default function App() {
       name: "ReactRender",
     },
     {
-      id: 4,
+      id: 3,
       name: "Memoize",
     },
   ];

@@ -1,7 +1,7 @@
 import * as React from "react";
 import { fetchData } from "./utils";
 
-export default function DataTable() {
+const PokemonList = () => {
   const [data, setData] = React.useState([]);
   const [isRTL, setIsRTL] = React.useState(false);
   const [searchTerm, setSearchTerm] = React.useState("");
@@ -122,4 +122,6 @@ export default function DataTable() {
       </table>
     </div>
   );
-}
+};
+
+export default PokemonList;

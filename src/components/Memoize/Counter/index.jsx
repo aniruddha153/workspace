@@ -8,7 +8,7 @@ const ChildComponent = React.memo(({ children, onClick }) => {
 
 const MemoizedChildComponent = ChildComponent;
 
-export default function ParentComponent() {
+const CounterParentComponent = () => {
   const [time, setTime] = React.useState(new Date().toLocaleTimeString());
   const [count, setCount] = React.useState(0);
 
@@ -41,4 +41,6 @@ export default function ParentComponent() {
       </MemoizedChildComponent>
     </div>
   );
-}
+};
+
+export default CounterParentComponent;

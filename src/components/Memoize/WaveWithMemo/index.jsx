@@ -1,5 +1,5 @@
 import * as React from "react";
-import Wave from "./Wave";
+import HandWave from "./HandWave";
 
 function Greeting({ name }) {
   const [index, setIndex] = React.useState(0);
@@ -37,11 +37,13 @@ function Greeting({ name }) {
         {greetings[index]}, {name}
       </h1>
       <button onClick={handleClick}>Next Greeting</button>
-      <Wave onClick={handleWaveClick} options={options} />
+      <HandWave onClick={handleWaveClick} options={options} />
     </main>
   );
 }
 
-export default function App() {
+const WaveWithMemo = () => {
   return <Greeting name="Tyler" />;
-}
+};
+
+export default WaveWithMemo;
