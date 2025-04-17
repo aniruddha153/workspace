@@ -1,0 +1,33 @@
+.music-player {
+  padding: 20px;
+  text-align: center;
+  border-radius: 12px;
+  transition: background-color 0.3s ease;
+}
+
+.music-player.playing {
+  background-color: #e0ffe0;
+}
+
+.music-player.paused {
+  background-color: #ffe0e0;
+}
+
+.music-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.music-button.btn-play {
+  background-color: #28a745;
+  color: white;
+}
+
+.music-button.btn-stop {
+  background-color: #dc3545;
+  color: white;
+}
